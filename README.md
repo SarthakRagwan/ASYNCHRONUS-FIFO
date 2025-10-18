@@ -2,7 +2,7 @@
 
 👨‍💻 Author
 
-Sarthak Ragwan
+Sarthak Kumar
 
 Digital Design and Verification Enthusiast
 
@@ -223,10 +223,7 @@ TEST 1 : Basic write and read
 600ps : R : FIFO[02] : 100
 All outputs matched successfully!
 
-**Waveforrm**
-
-<img width="1819" height="353" alt="Screenshot (359)" src="https://github.com/user-attachments/assets/3894f929-823a-478e-ace3-0228d0c3357c" />
-
+Waveform
 
 asynch_fifo_test/
 │
@@ -241,8 +238,6 @@ Icarus Verilog – Simulation
 GTKWave – Waveform analysis
 Visual Studio Code – Development and editing environment
 
-**Waveforrm**
 
-<img width="1819" height="353" alt="Screenshot (359)" src="https://github.com/user-attachments/assets/3894f929-823a-478e-ace3-0228d0c3357c" />
 
 
