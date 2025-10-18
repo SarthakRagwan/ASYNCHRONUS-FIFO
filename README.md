@@ -1,8 +1,5 @@
-![FIFO Waveform](https://github.com/SarthakRagwan/ASYNCHRONUS-FIFO/blob/main/img.png?raw=true)
 
 Asynchronus FIFO
-
-
 
 👨‍💻 Author
 
@@ -214,7 +211,6 @@ Any mismatch or timing violation is reported on the console.
 ### Run the Simulation
 Using **Icarus Verilog** and **GTKWave**:
 
-```bash
 iverilog -o testbench main.v test.v
 vvp testbench
 
@@ -226,8 +222,11 @@ TEST 1 : Basic write and read
 500ps : R : FIFO[01] : 10
 600ps : R : FIFO[02] : 100
 All outputs matched successfully!
----
+
+Waveform :
+
 ![FIFO Waveform](https://github.com/SarthakRagwan/ASYNCHRONUS-FIFO/blob/main/img.png?raw=true)
+
 asynch_fifo_test/
 │
 ├── main.v           # Asynchronous FIFO design (DUT)
