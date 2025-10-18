@@ -215,31 +215,23 @@ iverilog -o testbench main.v test.v
 vvp testbench
 
 TEST 1 : Basic write and read
-
-100ps : W : FIFO[00] : 1
-
-200ps : W : FIFO[01] : 10
-
-300ps : W : FIFO[02] : 100
-
-400ps : R : FIFO[00] : 1
-
-500ps : R : FIFO[01] : 10
-
-600ps : R : FIFO[02] : 100
+100ps : W : FIFO[00] : 1<br>
+200ps : W : FIFO[01] : 10<br>
+300ps : W : FIFO[02] : 100<br>
+400ps : R : FIFO[00] : 1<br>
+500ps : R : FIFO[01] : 10<br>
+600ps : R : FIFO[02] : 100<br>
 
 All outputs matched successfully!
 
 Waveform :
 
-![FIFO Waveform](https://github.com/SarthakRagwan/ASYNCHRONUS-FIFO/blob/main/img.png?raw=true)
+<img width="1819" height="353" alt="img" src="https://github.com/user-attachments/assets/a00ccf64-6edd-4beb-8301-a0dfe177f5d1" />
 
 🧰 Tools Used
 
-Icarus Verilog – Simulation
-
-GTKWave – Waveform analysis
-
+Icarus Verilog – Simulation<br>
+GTKWave – Waveform analysis<br>
 Visual Studio Code – Development and editing environment
 
 
