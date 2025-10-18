@@ -1,6 +1,6 @@
 ![FIFO Waveform](https://github.com/SarthakRagwan/ASYNCHRONUS-FIFO/blob/main/img.png?raw=true)
 
-**#Asynchronus FIFO**
+Asynchronus FIFO
 
 
 
@@ -226,6 +226,9 @@ TEST 1 : Basic write and read
 500ps : R : FIFO[01] : 10
 600ps : R : FIFO[02] : 100
 All outputs matched successfully!
+
+<img width="1819" height="353" alt="img" src="https://github.com/user-attachments/assets/c5d440aa-17a9-47dd-b5ce-266f51b6a908" />
+
 
 asynch_fifo_test/
 │
