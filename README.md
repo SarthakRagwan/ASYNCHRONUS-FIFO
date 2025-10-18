@@ -1,8 +1,11 @@
 **#Asynchronus FIFO**
 
 👨‍💻 Author
+
 Sarthak Ragwan
+
 Digital Design and Verification Enthusiast
+
 This project demonstrates asynchronous FIFO operation and verification through a modular Verilog testbench.
 
 # 🧩 Asynchronous FIFO (First-In-First-Out) — Verilog
