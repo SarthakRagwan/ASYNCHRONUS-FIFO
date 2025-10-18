@@ -241,3 +241,8 @@ Icarus Verilog – Simulation
 GTKWave – Waveform analysis
 Visual Studio Code – Development and editing environment
 
+**Waveforrm**
+
+<img width="1819" height="353" alt="Screenshot (359)" src="https://github.com/user-attachments/assets/3894f929-823a-478e-ace3-0228d0c3357c" />
+
+
