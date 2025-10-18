@@ -90,6 +90,7 @@ Each pointer crossing into another clock domain passes through **two D flip-flop
 This allows metastability to settle before logic comparison.
 
 Write Pointer --> [FF1] --> [FF2] --> Used in Read Domain
+
 Read Pointer --> [FF1] --> [FF2] --> Used in Write Domain
 
 
@@ -102,7 +103,7 @@ Read Pointer --> [FF1] --> [FF2] --> Used in Write Domain
 - Meaning, there’s no data to read.
 
 #### FIFO Full
-- The FIFO is **full** when the **next write pointer** equals the **synchronized read pointer** with the MSB inverted.
+- The FIFO is **full** when the **write pointer** equals the **synchronized read pointer** with the MSB and MSB-1 inverted.
 - This logic avoids ambiguity when the pointers overlap due to circular addressing.
 
 This ensures reliable detection of boundary conditions in the circular buffer.
