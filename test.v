@@ -4,13 +4,13 @@
 //  Author       : Sarthak Kumar
 //  Description  :
 //
-//  🧠 PURPOSE
+//   PURPOSE
 //  ---------------------------------------------------------------------------
 //  This testbench verifies the functional correctness of an asynchronous FIFO.
 //  It drives independent write and read clocks, applies multiple stimulus
 //  patterns, automatically checks data correctness, and logs pass/fail reports.
 //
-//  ✅ KEY FEATURES
+//   KEY FEATURES
 //  ---------------------------------------------------------------------------
 //  - Independent asynchronous write/read clocks (different frequencies).
 //  - Self-checking mechanism using expected-data comparison.
@@ -18,7 +18,7 @@
 //  - Human-readable simulation logs (OK / ERROR).
 //  - Waveform generation compatible with GTKWave or other viewers.
 //
-//  🧩 HOW TO RUN
+//   HOW TO RUN
 //  ---------------------------------------------------------------------------
 //      iverilog -o fifo_tb testbench.v main.v
 //      vvp fifo_tb
@@ -37,7 +37,7 @@
 module test();
 
 //=============================================================================
-// 1️⃣ Parameter Declarations
+// 1️ Parameter Declarations
 //-----------------------------------------------------------------------------
 // Defines FIFO configuration: word width and depth.
 //=============================================================================
@@ -45,7 +45,7 @@ parameter fifo_depth = 4;       // FIFO depth (number of storage entries)
 parameter data_size  = 32;      // Data width in bits
 
 //=============================================================================
-// 2️⃣ Signal Declarations
+// 2️ Signal Declarations
 //-----------------------------------------------------------------------------
 // These signals connect the testbench and the DUT (Device Under Test).
 //=============================================================================
@@ -69,7 +69,7 @@ wire fifo_empty;                // Indicates FIFO is empty (cannot read)
 localparam address_bits = $clog2(fifo_depth);
 
 //=============================================================================
-// 3️⃣ Device Under Test (DUT) Instantiation
+// 3️ Device Under Test (DUT) Instantiation
 //-----------------------------------------------------------------------------
 // Instantiates the asynchronous FIFO being tested.
 //=============================================================================
@@ -87,7 +87,7 @@ asynch_fifo dut (
 );
 
 //=============================================================================
-// 4️⃣ Clock and Reset Generation
+// 4️ Clock and Reset Generation
 //-----------------------------------------------------------------------------
 // Two independent clocks simulate asynchronous domains.
 //=============================================================================
@@ -110,7 +110,7 @@ initial begin
 end
 
 //=============================================================================
-// 5️⃣ Waveform Dump and Simulation Termination
+// 5️ Waveform Dump and Simulation Termination
 //-----------------------------------------------------------------------------
 // Generates VCD (waveform) file for post-simulation analysis.
 // Prints summary results and terminates simulation.
@@ -136,7 +136,7 @@ initial begin
 end
 
 //=============================================================================
-// 6️⃣ Internal Storage and Scoreboard Mechanism
+// 6️ Internal Storage and Scoreboard Mechanism
 //-----------------------------------------------------------------------------
 // The testbench keeps track of all written data so that every read operation
 // can be automatically verified against the expected result.
@@ -149,7 +149,7 @@ integer total_ok = 0;                        // Count of successful comparisons
 integer total_error = 0;                     // Count of mismatched data
 
 //=============================================================================
-// 7️⃣ WRITE TASK
+// 7️ WRITE TASK
 //-----------------------------------------------------------------------------
 // Performs one FIFO write operation. Logs actions and stores the value in the
 // expected array for later verification.
@@ -175,7 +175,7 @@ end
 endtask
 
 //=============================================================================
-// 8️⃣ READ TASK
+// 8️ READ TASK
 //-----------------------------------------------------------------------------
 // Performs one FIFO read operation and checks if the output data matches
 // the expected value stored during write. Reports "OK" or "ERROR" accordingly.
@@ -216,7 +216,7 @@ end
 endtask
 
 //=============================================================================
-// 9️⃣ TEST SEQUENCES
+// 9️ TEST SEQUENCES
 //-----------------------------------------------------------------------------
 // Sequential and concurrent test patterns covering various FIFO scenarios.
 //=============================================================================
@@ -326,3 +326,4 @@ initial begin
     join
 end // end initial
 endmodule
+
