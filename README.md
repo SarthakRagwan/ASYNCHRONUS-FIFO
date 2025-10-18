@@ -234,17 +234,12 @@ Waveform :
 
 ![FIFO Waveform](https://github.com/SarthakRagwan/ASYNCHRONUS-FIFO/blob/main/img.png?raw=true)
 
-asynch_fifo_test/
-│
-├── main.v           # Asynchronous FIFO design (DUT)
-├── test.v           # Comprehensive testbench
-├── test.vcd         # Waveform output after simulation
-└── README.md        # Project documentation
-
 🧰 Tools Used
 
 Icarus Verilog – Simulation
+
 GTKWave – Waveform analysis
+
 Visual Studio Code – Development and editing environment
 
 
