@@ -215,12 +215,19 @@ iverilog -o testbench main.v test.v
 vvp testbench
 
 TEST 1 : Basic write and read
+
 100ps : W : FIFO[00] : 1
+
 200ps : W : FIFO[01] : 10
+
 300ps : W : FIFO[02] : 100
+
 400ps : R : FIFO[00] : 1
+
 500ps : R : FIFO[01] : 10
+
 600ps : R : FIFO[02] : 100
+
 All outputs matched successfully!
 
 Waveform :
