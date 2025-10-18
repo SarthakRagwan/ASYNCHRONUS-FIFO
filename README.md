@@ -223,9 +223,7 @@ TEST 1 : Basic write and read
 600ps : R : FIFO[02] : 100
 All outputs matched successfully!
 
-Waveform
-
-<img width="1819" height="353" alt="Screenshot (359)" src="https://github.com/user-attachments/assets/80ed19fd-be81-4e84-b2df-5408601c24b3" />
+![FIFO Waveform](img.png)
 
 
 asynch_fifo_test/
